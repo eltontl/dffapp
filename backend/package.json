@@ -1,23 +1,28 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API do DffApp",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
+
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "Elton Tavares Lima",
+  "license": "MIT",
+  "type": "module",
+  
   "dependencies": {
-    "express": "^5.2.1",
-    "tsx": "^4.21.0"
+    "express": "^5.2.1"
   },
+  
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^25.5.0",
-    "typescript": "^6.0.2"
+    "@types/node": "^25.6.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   }
 }
